@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/header_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="@dimen/padding_10"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_18"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="More Info"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="@dimen/margin_65"
+        android:layout_height="@dimen/margin_65"
+        android:layout_below="@+id/header_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_30"/>
+
+    <TextView
+        android:id="@+id/project_header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:padding="@dimen/margin_5"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_16"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:text="Project Description"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_below="@+id/avatar_image_view" />
+
+    <TextView
+        android:id="@+id/project_value_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:padding="@dimen/margin_5"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_16"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/project_header_text_view" />
+
+    <TextView
+        android:id="@+id/project_desc_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:padding="@dimen/margin_5"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_16"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_below="@+id/project_value_text_view" />
+</RelativeLayout>
